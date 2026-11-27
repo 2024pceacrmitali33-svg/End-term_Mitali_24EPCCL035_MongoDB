@@ -1,0 +1,6 @@
+
+@echo off
+if not exist Outputs mkdir Outputs
+mongosh --quiet --file Scenario_2.2_Sales/sales.js > Outputs/sales_output.txt 2>&1
+type Outputs/sales_output.txt
+pause

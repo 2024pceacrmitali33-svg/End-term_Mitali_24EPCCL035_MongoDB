@@ -1,0 +1,6 @@
+
+@echo off
+if not exist Outputs mkdir Outputs
+mongosh --quiet --file Scenario_2.1_Library/library.js > Outputs/library_output.txt 2>&1
+type Outputs/library_output.txt
+
